@@ -1,0 +1,112 @@
+body { 
+	margin: 0;
+	padding: 0;
+    background-color: rgba(128, 128, 128, 0.25);
+    overflow: auto;
+}
+
+.nav {
+    position: absolute; 
+    height: 50px;
+	width:100%;
+	min-width:1200px;
+    background-color: rgb(203, 247, 203);
+    border-bottom: 2px solid lightgray;
+}
+
+.nav-link {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.logo {
+    float: left;
+    padding: 14px 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.display {
+    position: absolute; 
+    top: 50px;
+    width: 100%;
+    height: 32.25%;
+    background-color: rgba(126, 126, 126, 0.25);
+}
+
+.home {
+    position: absolute; 
+    width: 75%;
+    height: 100%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.content {
+    width: 75%;
+    height: 60%;
+    position: absolute;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    bottom: 0;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.sign-in {
+    width: 25%;
+    height: 40%;
+    position: absolute;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    padding: 5px;
+    bottom: 40%;
+}
+
+.sign-in > legend { 
+    background-color: white;
+	border: 2px solid lightgray;
+}
+
+.dash {
+    width: 75%;
+    height: 90%;
+    position: absolute;
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    bottom: 0;
+}
+
+#User-choice:hover #logout-dropdown, #logout-dropdown:hover{
+    display: block !important;
+}
+
+#logout-dropdown{
+    width:75;
+    height:30;
+    z-index:100;
+    background-color:rgb(203, 237, 203);
+}
+
+#logout-dropdown:hover{
+    background-color:rgb(203, 237, 223);
+}

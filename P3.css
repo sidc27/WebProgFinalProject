@@ -1,0 +1,156 @@
+body { 
+    margin: 0;
+    padding: 0;
+ background-color: rgba(128, 128, 128, 0.25);
+ overflow: auto;
+
+}
+
+.nav {
+    position: absolute; 
+    height: 50px;
+	width:100%;
+	min-width:1200px;
+    background-color: rgb(203, 247, 203);
+    border-bottom: 2px solid lightgray;
+}
+
+input[type="number"] {
+    width: 60px; 
+    text-align: center;
+}
+
+.nav-link {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    color: orange;
+}
+
+.logo {
+    float: left;
+    padding: 14px 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.display {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	min-width:1200px;
+}
+.content {
+    position: absolute;
+    top: 120px;  /* Keeps it at 120px from the top */
+    left: 50%;  /* Aligns the left edge to the middle of the viewport */
+    transform: translateX(-50%);  /* Moves it back by half its own width */
+    display: flex;
+    width: 80%;
+    min-width: 1200px;
+    height: auto;
+    text-align: center;
+    justify-content: center; /* Ensures that children of .content are centered */
+}
+
+
+.results {
+    flex: 3; /* Takes up 3 parts of the space */
+    display: flex;
+	flex-direction:column
+}
+.house {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;  /* Correct syntax for border */
+    border-radius: 5px;
+    box-shadow: 3px 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.house img {  
+    max-width: 275px;
+    overflow: hidden;
+}
+.add,.edit{
+       display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.add img:hover {
+    content: url('./Plus1.png');
+}
+.wishlist {
+	margin-left:10px;
+    flex: 1; 
+    border: 1px solid black;
+    display: flex;
+	text-align:center;
+	flex-direction:column;
+
+}
+#User-choice:hover #logout-dropdown, #logout-dropdown:hover{
+    display: block !important;
+}
+#logout-dropdown{
+width:75;
+height:30;
+z-index:100;
+background-color:rgb(203, 237, 203);
+}
+#logout-dropdown:hover{
+background-color:rgb(203, 237, 223);
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	text-align:center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

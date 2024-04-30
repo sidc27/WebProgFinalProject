@@ -1,0 +1,93 @@
+<?php
+$host = "localhost";
+$user = "kevoy2";
+$pass = "kevoy2";
+$dbname = "kevoy2";
+
+//Create Connection.
+$conn = new mysqli($host, $user, $pass, $dbname);
+//Check Connection.
+if ($conn->connect_error) {
+	echo "Could not connect to server\n";
+	die("Connection failed: " . $conn->connect_error);
+}
+//Inserting to the table
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES('647 angle street', 'Suwanee', 1997, 2, 1, 1780, 160000, './house_img/image (1).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('872 Pine Street', 'Los Angeles', 1985, 5, 3, 2500, 720000, './house_img/image (2).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('3497 Second Street', 'San Antonio', 2002, 2, 2, 1000, 230000, './house_img/image (3).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5487 Oak Street', 'Chicago', 1978, 3, 2, 1500, 380000, './house_img/image (4).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('691 Elm Street', 'San Jose', 1995, 4, 3, 1800, 480000, './house_img/image (5).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('8794 First Street', 'New York', 2005, 5, 4, 2200, 620000, './house_img/image (6).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('1233 Main Street', 'Dallas', 1988, 3, 2, 1500, 360000, './house_img/image (7).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('452 Cedar Street', 'Phoenix', 1999, 4, 3, 2000, 520000, './house_img/image (8).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('7823 Second Street', 'Philadelphia', 1965, 3, 2, 1200, 300000, './house_img/image (9).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('221 Fourth Street', 'San Diego', 2008, 2, 2, 1000, 250000, './house_img/image (10).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Maple Street', 'Houston', 1972, 4, 3, 2000, 540000, './house_img/image (11).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('6489 Third Street', 'Los Angeles', 1980, 3, 2, 1500, 370000, './house_img/image (12).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('541 First Street', 'Dallas', 2004, 4, 3, 1800, 490000, './house_img/image (13).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('457 Main Street', 'Chicago', 1992, 3, 2, 1500, 380000, './house_img/image (14).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Cedar Street', 'San Jose', 1985, 5, 4, 2200, 610000, './house_img/image (15).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5463 Oak Street', 'New York', 2000, 3, 2, 1500, 390000, './house_img/image (16).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('786 Elm Street', 'Phoenix', 1988, 4, 3, 2000, 510000, './house_img/image (17).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('9897 First Street', 'Philadelphia', 2005, 3, 2, 1500, 380000, './house_img/image (18).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('321 Third Street', 'San Diego', 1978, 2, 2, 1000, 260000, './house_img/image (19).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('741 Cedar Street', 'Houston', 1996, 4, 3, 1800, 500000, './house_img/image (20).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('6582 Second Street', 'Los Angeles', 2002, 3, 2, 1500, 380000, './house_img/image (21).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1982, 4, 3, 2000, 520000, './house_img/image (22).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('876 First Street', 'Chicago', 1998, 3, 2, 1500, 370000, './house_img/image (23).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('547 Main Street', 'San Jose', 2007, 5, 4, 2200, 610000, './house_img/image (24).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2341 Pine Street', 'New York', 1990, 3, 2, 1500, 380000, './house_img/image (25).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('976 Elm Street', 'Phoenix', 1985, 4, 3, 2000, 530000, './house_img/image (26).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5642 First Street', 'Philadelphia', 2003, 3, 2, 1500, 390000, './house_img/image (27).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('785 Third Street', 'San Diego', 1976, 2, 2, 1000, 270000, './house_img/image (28).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1999, 4, 3, 1800, 510000, './house_img/image (29).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2004, 3, 2, 1500, 380000, './house_img/image (30).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1988, 4, 3, 2000, 520000, './house_img/image (31).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1996, 3, 2, 1500, 370000, './house_img/image (32).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2009, 5, 4, 2200, 600000, './house_img/image (33).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2331 Pine Street', 'New York', 1993, 3, 2, 1500, 380000, './house_img/image (34).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('973 Elm Street', 'Phoenix', 1983, 4, 3, 2000, 520000, './house_img/image (35).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5672 First Street', 'Philadelphia', 2002, 3, 2, 1500, 390000, './house_img/image (36).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Third Street', 'San Diego', 1972, 2, 2, 1000, 280000, './house_img/image (37).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1998, 4, 3, 1800, 520000, './house_img/image (38).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2007, 3, 2, 1500, 380000, './house_img/image (39).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1990, 4, 3, 2000, 510000, './house_img/image (40).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1994, 3, 2, 1500, 370000, './house_img/image (41).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2010, 5, 4, 2200, 610000, './house_img/image (42).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2331 Pine Street', 'New York', 1989, 3, 2, 1500, 380000, './house_img/image (43).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('973 Elm Street', 'Phoenix', 1986, 4, 3, 2000, 530000, './house_img/image (44).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5672 First Street', 'Philadelphia', 2001, 3, 2, 1500, 390000, './house_img/image (45).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Third Street', 'San Diego', 1978, 2, 2, 1000, 290000, './house_img/image (46).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1997, 4, 3, 1800, 530000, './house_img/image (47).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2008, 3, 2, 1500, 380000, './house_img/image (48).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1991, 4, 3, 2000, 520000, './house_img/image (49).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1993, 3, 2, 1500, 370000, './house_img/image (50).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2011, 5, 4, 2200, 610000, './house_img/image (51).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2331 Pine Street', 'New York', 1988, 3, 2, 1500, 380000, './house_img/image (52).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('973 Elm Street', 'Phoenix', 1987, 4, 3, 2000, 520000, './house_img/image (53).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5672 First Street', 'Philadelphia', 2000, 3, 2, 1500, 390000, './house_img/image (54).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Third Street', 'San Diego', 1976, 2, 2, 1000, 280000, './house_img/image (55).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1998, 4, 3, 1800, 520000, './house_img/image (56).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2006, 3, 2, 1500, 380000, './house_img/image (57).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1992, 4, 3, 2000, 510000, './house_img/image (58).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1995, 3, 2, 1500, 370000, './house_img/image (59).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2012, 5, 4, 2200, 610000, './house_img/image (60).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2331 Pine Street', 'New York', 1987, 3, 2, 1500, 380000, './house_img/image (61).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('973 Elm Street', 'Phoenix', 1988, 4, 3, 2000, 530000, './house_img/image (62).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5672 First Street', 'Philadelphia', 1999, 3, 2, 1500, 390000, './house_img/image (63).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Third Street', 'San Diego', 1975, 2, 2, 1000, 290000, './house_img/image (64).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1996, 4, 3, 1800, 530000, './house_img/image (65).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2005, 3, 2, 1500, 380000, './house_img/image (66).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1993, 4, 3, 2000, 520000, './house_img/image (67).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1997, 3, 2, 1500, 370000, './house_img/image (68).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2013, 5, 4, 2200, 610000, './house_img/image (69).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('2331 Pine Street', 'New York', 1986, 3, 2, 1500, 380000, './house_img/image (70).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('973 Elm Street', 'Phoenix', 1989, 4, 3, 2000, 520000, './house_img/image (71).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('5672 First Street', 'Philadelphia', 1998, 3, 2, 1500, 390000, './house_img/image (72).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('789 Third Street', 'San Diego', 1974, 2, 2, 1000, 280000, './house_img/image (73).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 Cedar Street', 'Houston', 1995, 4, 3, 1800, 520000, './house_img/image (74).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('364 Second Street', 'Los Angeles', 2003, 3, 2, 1500, 380000, './house_img/image (75).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('234 Oak Street', 'Dallas', 1994, 4, 3, 2000, 510000, './house_img/image (76).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('987 First Street', 'Chicago', 1998, 3, 2, 1500, 370000, './house_img/image (77).jpg');
+INSERT INTO Houses (H_address, city, B_year, bed, bath, H_size, price, House_image) VALUES ('543 Main Street', 'San Jose', 2014, 5, 4, 2200, 610000, './house_img/image (78).jpg');
+?>
